@@ -13,6 +13,7 @@ public class intro{
         //For getting a character at a definite position
         char b=s2.charAt(1);
         System.out.println(b);
+        //s2.charAt(0)='z'; won't work
         // This will close the scanner and save resource
         scn.close();
     }
