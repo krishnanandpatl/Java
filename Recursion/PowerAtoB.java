@@ -1,16 +1,17 @@
 package Recursion;
 
 public class PowerAtoB {
-    public static int power(int a,int b) {
+    public static double power(double a,int b) {
         if(b==0){
             return 1;
         }
-        int half=power(a, b/2);
+        double half=power(a, b/2);
         half*=half;
-        return b%2==0?half : half*a;
+        return b%2==0?half:half*a;
     }
     public static void main(String[] args) {
-        int a=10,b=-2;
-        System.out.println(power(a,b));
+        double a=2;
+        int b=2;
+        System.out.println(power(a, b));
     }
 }
